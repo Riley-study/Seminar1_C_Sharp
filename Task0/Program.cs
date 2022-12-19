@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
+WriteLine("Введите число: ");
+int a = int.Parse(ReadLine()!);
+WriteLine($"Квадрат числа {a} равен {a*a}");
