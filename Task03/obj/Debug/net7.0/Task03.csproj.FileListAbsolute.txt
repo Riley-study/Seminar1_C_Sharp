@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.AssemblyInfo.cs
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\bin\Debug\net7.0\Task03.exe
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\bin\Debug\net7.0\Task03.deps.json
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\bin\Debug\net7.0\Task03.runtimeconfig.json
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\bin\Debug\net7.0\Task03.dll
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\bin\Debug\net7.0\Task03.pdb
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.dll
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\refint\Task03.dll
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.pdb
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\Task03.genruntimeconfig.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task03\obj\Debug\net7.0\ref\Task03.dll
