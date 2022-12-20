@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\bin\Debug\net7.0\Task05.exe
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\bin\Debug\net7.0\Task05.deps.json
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\bin\Debug\net7.0\Task05.runtimeconfig.json
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\bin\Debug\net7.0\Task05.dll
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\bin\Debug\net7.0\Task05.pdb
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.AssemblyInfo.cs
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.dll
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\refint\Task05.dll
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.pdb
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\Task05.genruntimeconfig.cache
+C:\Users\user\Desktop\GeekBrains\С#\Seminar1\Seminar1_C_Sharp\Task05\obj\Debug\net7.0\ref\Task05.dll
