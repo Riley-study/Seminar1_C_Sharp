@@ -7,4 +7,4 @@ WriteLine("Ведите первое число: ");
 int a1 = Convert.ToInt32(ReadLine());
 WriteLine("Ведите второе число: ");
 int a2 = Convert.ToInt32(ReadLine());
-WriteLine(a1%a2==0?"кратно":"не кратно");
+WriteLine(a1%a2==0?"кратно":$"не кратно, остаток {a1%a2}");
