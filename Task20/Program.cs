@@ -5,8 +5,8 @@ Clear();
 WriteLine("Введите число N: ");
 int N = Convert.ToInt32(ReadLine());
 int number = 1;
-while (Math.Sqrt(number)<N) 
+while (Math.Pow(number,2)<N) 
 {
-WriteLine(Math.Sqrt(number));
+Write($"{Math.Pow(number,2)};");
 number=number+1;
 }
