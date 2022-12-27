@@ -12,4 +12,4 @@ int Bx = Convert.ToInt32(ReadLine());
 WriteLine("Введите координату y точки B: ");
 int By = Convert.ToInt32(ReadLine());
 double Length = Math.Sqrt(Math.Pow((Bx - Ax),2) + Math.Pow((By - Bx),2));
-WriteLine($"Длинна отрезка АВ : {Length}");
+WriteLine($"Длинна отрезка АВ : {Length:f2}");
