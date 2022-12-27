@@ -3,10 +3,11 @@
 using static System.Console;
 Clear();
 WriteLine("Введите число N: ");
-int N = Convert.ToInt32(ReadLine());
+//int N = Convert.ToInt32(ReadLine());
+int.TryParse(ReadLine(), out int N);
 int number = 1;
-while (Math.Pow(number,2)<N) 
+while (number<N) 
 {
-Write($"{Math.Pow(number,2)};");
+WriteLine($"Квадрат числа {number} = {Math.Pow(number,2)};");
 number=number+1;
 }
