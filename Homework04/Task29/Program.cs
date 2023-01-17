@@ -15,17 +15,17 @@ int[] FullArray(int size)
     int[] res = new int[size];
     for(int i=0; i<res.Length;i++)
     {
-        res[i] = new Random().Next(0,10);
+        res[i] = new Random().Next();
     }
 
     return res;
 }
 
-// Создаем метод, который печатает в терминале масив любого размера
+// Создаем метод, который печатает в терминале масив любого размера в формате [ , , , ]
 void PrintArray(int[] arr)
 {
     for(int i=0;i<arr.Length;i++)
     {
-        Write($"{arr[i]}");
+        Write(i==0? $"[{arr[i]}, ":i==arr.Length-1? $"{arr[i]}]": $"{arr[i]}, ");
     }
 }
