@@ -2,6 +2,8 @@
 //В задаче не использвать стандартный метод Pow!
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
+
+
 using static System.Console;
 Clear();
 // Получение данных от пользователя
@@ -11,11 +13,11 @@ WriteLine("Input number B: ");
 int numberB = int.Parse(ReadLine()!);
 
 // Использование метода, возводящего число А в степень В
-int PrintDegreeA = DegreeA(nunberA);
-
+int PrintDegreeA = DegreeA(numberA, numberB);
+WriteLine($"Число А в степени В равно {PrintDegreeA}");
 
 // Метод, возводящий число А в степень В
-int DegreeA(int A; int B)
+int DegreeA(int A, int B)
 {
     int result = 1;
     int i = 1;
