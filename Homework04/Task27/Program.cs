@@ -5,8 +5,10 @@
 using static System.Console;
 Clear();
 
+// Получение данных от пользователя
 WriteLine("введите целое положительное число: ");
 int number = int.Parse(ReadLine()!);
+// Использование метода, рассчитывающего сумму цифр в числе
 int CountSumOfNumbersPrint = CountSumOfNumbers(number);
 WriteLine($"Result: {CountSumOfNumbersPrint}");
 
