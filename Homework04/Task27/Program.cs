@@ -5,7 +5,7 @@
 using static System.Console;
 Clear();
 
-WriteLine("Input number: ");
+WriteLine("введите целое положительное число: ");
 int number = int.Parse(ReadLine()!);
 int CountSumOfNumbersPrint = CountSumOfNumbers(number);
 WriteLine($"Result: {CountSumOfNumbersPrint}");
@@ -16,8 +16,8 @@ int CountSumOfNumbers(int A)
     int result = 0;
     while(A>=1)
     {
-        A=A/10;
         result+=A%10;
+        A=A/10;
     }
     return result;
 }
