@@ -12,8 +12,8 @@ int FoundNumber = Convert.ToInt32(ReadLine());
 int[] SearchingArray = {-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6};
 PrintArray(SearchingArray);
 WriteLine();
-WriteLine($"{FoundNumber} ; -> {SearchingNumber(SearchingArray, FoundNumber)}");
-
+WriteLine($"{FoundNumber}  -> ");
+WriteLine(SearchingNumber(SearchingArray, FoundNumber)? "да": "нет");
 // матод, который проверяет массив на присутствие заданного числа в этом массиве
 
 bool SearchingNumber(int[] inArray, int number)
