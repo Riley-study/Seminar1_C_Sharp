@@ -3,7 +3,7 @@
 
 using static System.Console;
 Clear();
-int[] ArrayToDoWiht = GetArray(123, 0, 1200);
+int[] ArrayToDoWiht = GetArray(123, 10, 99);
 PrintArray(ArrayToDoWiht);
 int PrintCount = ArrayCount(ArrayToDoWiht);
 WriteLine();
