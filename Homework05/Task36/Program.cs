@@ -25,7 +25,7 @@ int ArrayCount(int[] inArray)
 
     while(i<inArray.Length)
     {
-        if ((i+1)%2==1) Count_Sum=Count_Sum+inArray[i];
+        if ((i)%2==1) Count_Sum=Count_Sum+inArray[i];
         i++;
     }
     return Count_Sum;
