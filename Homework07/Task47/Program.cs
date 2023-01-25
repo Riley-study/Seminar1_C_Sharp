@@ -26,7 +26,6 @@ double[,] GetMatrixArrray(int rows, int colomns, int minValue, int maxValue)
         {
             double number = rnd.NextDouble()*(maxValue-minValue)+minValue;
             resultArray[i, j] = Math.Round(number,1);
-            //resultArray[i, j] = new Random().Next(minValue, maxValue+1);
         }
     }
     return resultArray;
