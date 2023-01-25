@@ -12,6 +12,10 @@ Clear();
 Write("Введите диапазон матрицы и диапазон значений через пробел: ");
 string[] parametrs = ReadLine()!.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
+// Метод позваляющий преобразовать массив типа string в тип int
+//int[] intParams=Array.ConvertAll(parametrs,Convert.ToInt32);
+//int[] intParams=Array.ConvertAll(ReadLine()!.Split(new char[]{'\"','#',';',',','s'},StringSplitOptions.RemoveEmptyEntries),int.Parse);
+
 int[,] array = GetMatrixArrray(int.Parse(parametrs[0]), int.Parse(parametrs[1]), int.Parse(parametrs[2]), int.Parse(parametrs[3]));
 PrintMatrixArray(array);
 
