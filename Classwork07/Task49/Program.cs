@@ -63,7 +63,7 @@ double[,] SquareEvenElements(double[,] inArray, int rows, int colomns)
     {
         for (int j = 0; j < colomns; j++)
         {
-            if ((i-1)%2==0 && (j-1)%2==0) inArray[i,j] = Math.Pow(inArray[i,j],2);
+            if (i%2==0 && i!=0 && j%2==0 && j!=0) inArray[i,j] = Math.Pow(inArray[i,j],2);
         }
     }
     return inArray;
