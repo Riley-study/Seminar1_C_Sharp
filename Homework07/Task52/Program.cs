@@ -10,11 +10,7 @@ Clear();
 
 double[,] AverageMatrix = GetMatrixArrray(4, 8, 1, 5);
 PrintMatrixArray(AverageMatrix);
-//double[] resultMtrx = AverageColumns(AverageMatrix);
 PrintArray(AverageColumns(AverageMatrix));
-
-
-
 
 
 //Метод, рассчитывающий среднеарифметическое значение каждого столбца
