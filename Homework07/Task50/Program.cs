@@ -33,7 +33,6 @@ WriteLine(par1>=InitArray.GetLength(0)? "такого элемента в мас
 // Метод, который выводит нужный элемент из массива
 int FoundNumber(int[,] inArray, int rowsFound, int colomnsFound)
 {
-    //rowsFound>inArray.GetLength?
     int result = inArray[rowsFound,colomnsFound];
     return result;
 }
