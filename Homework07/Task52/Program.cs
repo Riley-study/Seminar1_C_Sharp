@@ -21,14 +21,14 @@ PrintArray(AverageColumns(AverageMatrix));
 double[] AverageColumns(double[,] inArray)
 {
     double[] result = new double[inArray.GetLength(1)];
-    double sum = 0;
     for (int j = 0; j < inArray.GetLength(1); j++)
     {
+        double sum = 0;
         for (int i = 0; i < inArray.GetLength(0); i++)
         {
             sum = sum + inArray[i, j];
         }
-        double sumAverege = Math.Round(sum / inArray.GetLength(0),1);
+        double sumAverege = Math.Round(sum / inArray.GetLength(0), 1);
         result[j] = sumAverege;
     }
     return result;
@@ -69,9 +69,9 @@ void PrintMatrixArray(double[,] inArray)
 void PrintArray(double[] inArray)
 {
     Write("[");
-    for (int i=0; i< inArray.Length-1; i++)
+    for (int i = 0; i < inArray.Length - 1; i++)
     {
         Write($"{inArray[i]}, ");
     }
-    Write($"{inArray[inArray.Length-1]}]");
+    Write($"{inArray[inArray.Length - 1]}]");
 }
