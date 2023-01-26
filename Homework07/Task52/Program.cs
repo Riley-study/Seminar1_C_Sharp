@@ -8,7 +8,7 @@
 using static System.Console;
 Clear();
 
-double[,] AverageMatrix = GetMatrixArrray(4, 4, 1, 10);
+double[,] AverageMatrix = GetMatrixArrray(4, 8, 1, 5);
 PrintMatrixArray(AverageMatrix);
 //double[] resultMtrx = AverageColumns(AverageMatrix);
 PrintArray(AverageColumns(AverageMatrix));
