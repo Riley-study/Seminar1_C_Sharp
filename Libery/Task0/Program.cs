@@ -7,4 +7,4 @@
 // dotnet add .\Task0\Task0.csproj reference .\MyLib\MyLib.csproj
 
 using MyLib;
-MyMethod.GetLineArray;
+//MyMethod.GetLineArray;
