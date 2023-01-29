@@ -7,7 +7,8 @@
 // 7 4 2 1
 // 9 5 3 2
 // 8 4 4 2
-
+int[,] InitArray = GetMatrixArray(5, 5, 1, 20);
+PrintMatrixArray(InitArray);
 
 
 
