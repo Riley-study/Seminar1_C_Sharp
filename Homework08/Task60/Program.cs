@@ -20,8 +20,6 @@ PrintMatrixArray3(InitMatrix);
 
 //////////////////////////////////////////////// Methods ////////////////////////////////////////////////////
 
-// Метод, 
-
 //Метод, формирующий трехмерную матрицу заданного размера в заданном диапозоне
 int[,,] GetMatrixArray3(int rows, int colomns, int weight, int minValue, int maxValue)
 {
