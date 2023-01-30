@@ -7,32 +7,64 @@
 // 7 4 2 1
 // 9 5 3 2
 // 8 4 4 2
-int[,] InitArray = GetMatrixArray(5, 5, 1, 20);
-PrintMatrixArray(InitArray);
 
+using static System.Console;
+Clear();
+
+int[,] InitArray = GetMatrixArray(5, 5, 1, 10);
+PrintMatrixArray(InitArray);
+WriteLine("Отсотированная матрица: ");
+int[,] SortedArray = FromMaxToMin(InitArray);
+PrintMatrixArray(SortedArray);
 
 
 
 //////////////////////////////////////////////// Methods ////////////////////////////////////////////////////
 
+// Метод, упорядычивающий по убыванию элементы каждой строки двумерного массива
+int[,] FromMaxToMin(int[,] inArray)
+{
+    int[,] ResultArray = new int[inArray.GetLength(0), inArray.GetLength(1)];
+
+    for (int i = 0; i < inArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < inArray.GetLength(1); j++)
+        {
+            int temp;
+            for (int n = j + 1; n < inArray.GetLength(1); n++)
+            {
+                if (inArray[i, j] < inArray[i, n])
+                {
+                    temp = inArray[i, j];
+                    inArray[i, j] = inArray[i, n];
+                    inArray[i, n] = temp;
+                }
+            }
+    ResultArray[i, j] = inArray[i, j];
+        }
+    }
+    return ResultArray;
+}
+
+
+
 //Метод, формирующий матрицу заданного размера в заданном диапозоне
 int[,] GetMatrixArray(int rows, int colomns, int minValue, int maxValue)
 {
-    int[,] resultArray = new int[rows,colomns];
+    int[,] resultArray = new int[rows, colomns];
     Random rnd = new Random();
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < colomns; j++)
         {
-            resultArray[i,j] = rnd.Next(minValue, maxValue+1);
+            resultArray[i, j] = rnd.Next(minValue, maxValue + 1);
         }
     }
     return resultArray;
 }
 
-
-// Метод, выводящий массив на печать
-void PrintMatrixArray(int [,] inArray)
+// Метод, выводящий двумерный массив на печать
+void PrintMatrixArray(int[,] inArray)
 {
     for (int i = 0; i < inArray.GetLength(0); i++)
     {
