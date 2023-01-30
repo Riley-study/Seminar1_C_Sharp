@@ -10,10 +10,10 @@ using static System.Console;
 Clear();
 
 WriteLine("Матрица A: ");
-int[,] MatrixA = GetMatrixArray(2, 2, 1, 5);
+int[,] MatrixA = GetMatrixArray(2, 4, 1, 5);
 PrintMatrixArray(MatrixA);
 WriteLine("Матрица B: ");
-int[,] MatrixB = GetMatrixArray(2, 2, 1, 5);
+int[,] MatrixB = GetMatrixArray(4, 3, 1, 5);
 PrintMatrixArray(MatrixB);
 
 WriteLine("Матрица C = A x B: ");
@@ -31,14 +31,19 @@ int[,] ProductOfMatrix(int[,] inMatrixA, int[,] inMatrixB)
     int[,] result = new int[inMatrixA.GetLength(0), inMatrixB.GetLength(1)];
     for (int i = 0; i < inMatrixA.GetLength(0); i++)
     {
-        for (int j = 0; inMatrixB.GetLength(1); j++)
+        if (inMatrixA.GetLength(1) != inMatrixB.GetLength(0))
         {
-        int sum = 0;
+            WriteLine("Невозможно осуществить умножение матриц!!");
+            break;
+        }
+        for (int j = 0; j < inMatrixB.GetLength(1); j++)
+        {
+            int sum = 0;
             for (int m = 0; m < inMatrixA.GetLength(1); m++)
             {
-                    sum += inMatrixA[i, m] * inMatrixB[m, j];
+                sum += inMatrixA[i, m] * inMatrixB[m, j];
             }
-        result[i, j] = sum;
+            result[i, j] = sum;
         }
     }
     return result;
