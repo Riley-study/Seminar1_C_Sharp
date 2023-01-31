@@ -9,7 +9,7 @@
 using static System.Console;
 Clear();
 
-int[,,] InitMatrix = GetMatrixArray3(2,2,2,10,99);
+int[,,] InitMatrix = GetMatrixArray3(2, 2, 2, 10, 99);
 PrintMatrixArray3(InitMatrix);
 
 
@@ -20,7 +20,7 @@ PrintMatrixArray3(InitMatrix);
 
 //////////////////////////////////////////////// Methods ////////////////////////////////////////////////////
 
-//Метод, формирующий трехмерную матрицу заданного размера в заданном диапозоне
+//Метод, формирующий трехмерную матрицу заданного размера в заданном диапозоне из уникальных чисел
 int[,,] GetMatrixArray3(int rows, int colomns, int weight, int minValue, int maxValue)
 {
     int[,,] resultArray = new int[rows, colomns, weight];
@@ -29,14 +29,42 @@ int[,,] GetMatrixArray3(int rows, int colomns, int weight, int minValue, int max
     {
         for (int j = 0; j < colomns; j++)
         {
-           for (int z = 0; z < weight; z++)
-           {
-             resultArray[i, j, z] = rnd.Next(minValue, maxValue + 1);
-           }
-           
+            for (int z = 0; z < weight; z++)
+            {
+                int a = rnd.Next(minValue, maxValue + 1);
+
+                if (!(DoubleNet(resultArray, a)))
+                {
+                    resultArray[i, j, z] = a;
+                }
+                else
+                {
+                    if(z==0) j--;
+                    else z--;
+                }
+
+            }
+
         }
     }
     return resultArray;
+}
+
+// Метод, проверяющий диапазон на повторяюиеся значения
+
+bool DoubleNet(int[,,] inArray, int a)
+{
+    for (int i = 0; i < inArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < inArray.GetLength(1); j++)
+        {
+            for (int z = 0; z < inArray.GetLength(2); z++)
+            {
+                if (a == inArray[i, j, z]) return true;
+            }
+        }
+    }
+    return false;
 }
 
 // Метод, выводящий трехмерную матрицу на печать
@@ -46,11 +74,11 @@ void PrintMatrixArray3(int[,,] inArray)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-           for (int z = 0; z < inArray.GetLength(2); z++)
-           {
-            Write($"{inArray[i, j,z],5} ({i},{j},{z})");
-           }
-            
+            for (int z = 0; z < inArray.GetLength(2); z++)
+            {
+                Write($"{inArray[i, j, z],5} ({i},{j},{z})");
+            }
+
         }
         WriteLine();
     }
