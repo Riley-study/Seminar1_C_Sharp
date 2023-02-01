@@ -15,11 +15,15 @@ PrintNumbers(10);
 
 void PrintNumbers(int num)
 {
-if (num == 1) Write(num);
-else
-{
-Write($"{num},");
-PrintNumbers(num - 1);
+    if (num < 1) Write("Введите натуральное число больше 1");
+    else
+    {
+        if (num == 1) Write(num);
+        else
+        {
+            Write($"{num},");
+            PrintNumbers(num - 1);
+        }
+    }
 
-}
 }
