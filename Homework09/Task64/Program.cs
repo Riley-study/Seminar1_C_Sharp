@@ -5,3 +5,21 @@
 
 using static System.Console;
 Clear();
+
+
+PrintNumbers(10);
+
+
+
+// Метод, печатающий числа от заданного N до 1
+
+void PrintNumbers(int num)
+{
+if (num == 1) Write(num);
+else
+{
+Write($"{num},");
+PrintNumbers(num - 1);
+
+}
+}
